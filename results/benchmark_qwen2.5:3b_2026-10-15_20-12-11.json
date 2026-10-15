@@ -1,0 +1,32 @@
+[
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "E-Mail zusammenfassen",
+        "Dauer": 10.198265790939331,
+        "Input-Token": 96,
+        "Output-Token": 57,
+        "Token/s": 14.679386741577895,
+        "Ladezeit": 5.255045078,
+        "Antwort": "Frau Berger, leider ist die Lieferung der 200 Kartons wegen eines Maschinenausfalls bei unserem Zulieferer verzögert und wir rechnen nun mit einer Lieferung am Freitag. Viele Grüße, Thomas Lang"
+    },
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "Beleg auslesen",
+        "Dauer": 3.754042863845825,
+        "Input-Token": 131,
+        "Output-Token": 40,
+        "Token/s": 14.856787992149671,
+        "Ladezeit": 0.000497185,
+        "Antwort": "Datum: 12.09.2026\nGesamtbetrag: 47,80 EUR\nHändler: Bürobedarf Huber GmbH"
+    },
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "Frage zu internem Dokument",
+        "Dauer": 1.9499566555023193,
+        "Input-Token": 91,
+        "Output-Token": 16,
+        "Token/s": 15.428586857158285,
+        "Ladezeit": 0.000613531,
+        "Antwort": "Pro Woche sind bis zu zwei Homeoffice-Tage erlaubt."
+    }
+]

@@ -31,9 +31,8 @@ def main ():
         except ValueError:
             print("Bitte gib eine gültige Zahl ein")
 
-    print(models[inn])
-
     benchmark(models[inn])
 
 
-main()
+if __name__ == "__main__":
+    main()

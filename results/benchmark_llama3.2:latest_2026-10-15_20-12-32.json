@@ -1,0 +1,32 @@
+[
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "E-Mail zusammenfassen",
+        "Dauer": 9.210760831832886,
+        "Input-Token": 90,
+        "Output-Token": 40,
+        "Token/s": 13.890099449639536,
+        "Ladezeit": 5.250314571,
+        "Antwort": "Die Lieferung von 200 Kartons wurde aufgrund eines Maschinenausfalls bei einem Zulieferer verzögert, ist jedoch nun für den Freitag geplant."
+    },
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "Beleg auslesen",
+        "Dauer": 3.0735280513763428,
+        "Input-Token": 115,
+        "Output-Token": 28,
+        "Token/s": 13.966341117905847,
+        "Ladezeit": 0.000502592,
+        "Antwort": "Bürobedarf, Huber GmbH, Rechnung Nr. 4711, 12.09.2026."
+    },
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "Frage zu internem Dokument",
+        "Dauer": 2.8309807777404785,
+        "Input-Token": 88,
+        "Output-Token": 26,
+        "Token/s": 14.054205991416124,
+        "Ladezeit": 0.000630591,
+        "Antwort": "Laut dem Text sind Mitarbeitende bis zu 2 Tage pro Woche im Homeoffice arbeiten erlaubt."
+    }
+]
