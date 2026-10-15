@@ -62,14 +62,14 @@ def benchmark(model):
             "Output-Token": data['eval_count'],
             "Token/s": data['eval_count'] / (data['eval_duration'] / 1e9),
             "Ladezeit": data['load_duration'] / 1e9,
-            "Antwort": data['response'],
+            # "Antwort": data['response'],
         })
 
     results_folder = Path('results')
     results_folder.mkdir(exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    file = results_folder / f"benchmark_{model}_{timestamp}.json"
+    file = results_folder / f"benchmark_{model.replace(':', '-')}_{timestamp}.json"
 
     with open(file, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4, ensure_ascii=False)

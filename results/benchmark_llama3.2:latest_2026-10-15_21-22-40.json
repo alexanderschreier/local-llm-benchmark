@@ -1,0 +1,29 @@
+[
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "E-Mail zusammenfassen",
+        "Dauer": 8.918506383895874,
+        "Input-Token": 90,
+        "Output-Token": 41,
+        "Token/s": 13.900255832513444,
+        "Ladezeit": 4.870709464
+    },
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "Beleg auslesen",
+        "Dauer": 3.4369747638702393,
+        "Input-Token": 115,
+        "Output-Token": 33,
+        "Token/s": 13.856167107054848,
+        "Ladezeit": 0.000513613
+    },
+    {
+        "Modell": "llama3.2:latest",
+        "Aufgabe": "Frage zu internem Dokument",
+        "Dauer": 2.82686448097229,
+        "Input-Token": 88,
+        "Output-Token": 26,
+        "Token/s": 14.112150344336468,
+        "Ladezeit": 0.007244762
+    }
+]

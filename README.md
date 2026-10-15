@@ -46,12 +46,33 @@ Die Ergebnisse landen als `results/benchmark_<model>_<Datum>_<Uhrzeit>.json`.
 python3 compare.py
 ```
 
-compary.py gibt die Ergebnisse der einzelnen Modelle sortiert nach den Aufgaben aus mit
+compare.py gibt die Ergebnisse der einzelnen Modelle sortiert nach den Aufgaben aus mit
 - Anzahl Läufe
 - Median
 - Min-Dauer
 - Max-Dauer
 - Ø Token
+- Ø Token/s
+- Ø Ladezeit
+
+```bash
+Aufgabe                      Modell          Läufe   Median     Min     Max  Ø Token  Ø Token/s  Ø Laden
+------------------------------------------------------------------------------------------------------
+Beleg auslesen               llama3.2:latest     2     5.7s    3.4s    8.0s       33        9.4     0.0s
+Beleg auslesen               qwen2.5:3b          2     7.9s    4.0s   11.8s       40        8.7     0.0s
+E-Mail zusammenfassen        llama3.2:latest     2    15.2s    8.9s   21.4s       48        9.3     6.5s
+E-Mail zusammenfassen        qwen2.5:3b          2    13.0s    8.7s   17.2s       56        9.7     4.2s
+Frage zu internem Dokument   llama3.2:latest     2     4.8s    2.8s    6.7s       26        9.3     0.0s
+Frage zu internem Dokument   qwen2.5:3b          2     5.7s    2.9s    8.5s       26        8.5     0.0s
+```
+
+
+
+## Beobachtungen
+
+- Beide Modelle erzeugen auf cem Test-Laptop gleich schnell Text (ca. 9 Token/s).
+- Die E-Mail-Aufgabe dauert pro Modell spürbar länger, weil das Modell erst in den Arbeitsspeicher geladen wird (4–7 s Ladezeit, Rest 0 s).
+- Die Laufzeiten schwanken stark: In jeder Kombination aus Modell und Aufgabe dauerte der langsamste Lauf zwei- bis dreimal so lange wie der schnellste. Mit nur zwei Läufen pro Kombination sind die Medianwerte daher nur eine grobe Orientierung.
 
 ## Einschränkungen
 

@@ -1,0 +1,29 @@
+[
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "E-Mail zusammenfassen",
+        "Dauer": 17.247496604919434,
+        "Input-Token": 96,
+        "Output-Token": 56,
+        "Token/s": 4.855845553588939,
+        "Ladezeit": 4.676841439
+    },
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "Beleg auslesen",
+        "Dauer": 11.822166681289673,
+        "Input-Token": 131,
+        "Output-Token": 40,
+        "Token/s": 3.844395404909504,
+        "Ladezeit": 0.00350377
+    },
+    {
+        "Modell": "qwen2.5:3b",
+        "Aufgabe": "Frage zu internem Dokument",
+        "Dauer": 8.532742023468018,
+        "Input-Token": 91,
+        "Output-Token": 25,
+        "Token/s": 3.4088535289269855,
+        "Ladezeit": 0.003706741
+    }
+]
