@@ -1,0 +1,26 @@
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+
+# Zugangsdaten und Umgebungsvariablen
+.env
+.env.*
+!.env.example
+
+# Benchmark-Ergebnisse
+benchmarks/
+
+# Python Tool Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
